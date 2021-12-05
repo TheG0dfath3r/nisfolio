@@ -16,8 +16,26 @@
 
     <!-- CSS
     ================================================== -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+        a:hover .img-title {
+            opacity: 1;
+            transition: opacity 0.5s;
+        }
+
+
+        .img-title {
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            transition: opacity 0.5s;
+            color: white;
+        }
+    </style>
 
     <!-- favicons
     ================================================== -->
@@ -546,8 +564,18 @@
                     <div id="modal-06" hidden>
                         <div class="modal-popup">
                             <center>
-                            <img src="images/4.png" alt="" style="display: inline-block;height:200px !important">
-                            <img src="images/vproject.png" alt="" style="display: inline-block;height:200px !important">
+                                <div class="item" style="border-radius: 10px;display: inline-block;">
+                                    <a class="folio-list__item-link_viit" href="#!">
+                                        <img src="images/4.png" alt="" style="height:300px !important" />
+                                        <div class="img-title" style="margin-top: -100px;margin-bottom: 100px;">我是標題 This is title</div>
+                                    </a>
+                                </div>
+                                <div class="item" style="border-radius: 10px;display: inline-block;">
+                                    <a class="folio-list__item-link_viit" href="#!">
+                                        <img src="images/vproject.png" alt="" style="height:250px !important" />
+                                        <div class="img-title" style="margin-top: -100px;margin-bottom: 100px;">我是標題 This is title</div>
+                                    </a>
+                                </div>
                             </center>
                             <div class="modal-popup__desc">
                                 <h5>Team Projects</h5>

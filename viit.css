@@ -1,10 +1,12 @@
 .section-news {
   background-color: #fffaf0;
 }
+
 .section-news h2 {
   font-size: 24px;
   letter-spacing: 0.4px;
 }
+
 .section-news .gallery .item {
   box-shadow: 0 0 5px 5px rgb(97, 95, 95);
 
@@ -15,6 +17,7 @@
   background-color: #efefef;
   position: relative;
 }
+
 .section-news .gallery a {
   position: absolute;
   top: 0;
@@ -25,10 +28,12 @@
   justify-content: center;
   align-items: center;
 }
+
 .section-news .gallery a:hover .img-title {
   opacity: 1;
   transition: opacity 0.5s;
 }
+
 .section-news .gallery .img-title {
   position: absolute;
   top: 0;
@@ -43,6 +48,7 @@
   transition: opacity 0.5s;
   color: white;
 }
+
 .section-news .gallery img {
   display: block;
   width: 100%;
