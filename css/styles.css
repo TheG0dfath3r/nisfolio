@@ -3611,7 +3611,7 @@ img.u-pull-left {
     position      : relative;
 }
 
-.folio-list__item-link {
+.folio-list__item-link,.folio-list__item-link_custom {
     display             : block;
     width               : 100%;
     padding-left        : calc(5.5 * var(--space));
@@ -3621,26 +3621,34 @@ img.u-pull-left {
 }
 
 .folio-list__item-link:focus,
-.folio-list__item-link:hover {
+.folio-list__item-link:hover,
+.folio-list__item-link_custom:focus,
+.folio-list__item-link_custom:hover {
     color   : var(--color-1);
     outline : 0;
 }
 
 .folio-list__item-link:focus .folio-list__item-pic::before,
-.folio-list__item-link:hover .folio-list__item-pic::before {
+.folio-list__item-link:hover .folio-list__item-pic::before,
+.folio-list__item-link_custom:focus .folio-list__item-pic::before,
+.folio-list__item-link_custom:hover .folio-list__item-pic::before {
     opacity    : 1;
     visibility : visible;
 }
 
 .folio-list__item-link:focus .folio-list__item-pic::after,
-.folio-list__item-link:hover .folio-list__item-pic::after {
+.folio-list__item-link:hover .folio-list__item-pic::after,
+.folio-list__item-link_custom:focus .folio-list__item-pic::after,
+.folio-list__item-link_custom:hover .folio-list__item-pic::after {
     opacity    : 1;
     visibility : visible;
     transform  : scale(1);
 }
 
 .folio-list__item-link:focus .folio-list__item-text::before,
-.folio-list__item-link:hover .folio-list__item-text::before {
+.folio-list__item-link:hover .folio-list__item-text::before,
+.folio-list__item-link_custom:focus .folio-list__item-text::before,
+.folio-list__item-link_custom:hover .folio-list__item-text::before {
     width : 100%;
 }
 
@@ -3995,6 +4003,10 @@ img.u-pull-left {
     .folio-list__item-link {
         padding-left : calc(4.25 * var(--space));
     }
+
+    .folio-list__item-link_custom {
+        padding-left : calc(4.25 * var(--space));
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -4008,6 +4020,10 @@ img.u-pull-left {
     }
 
     .folio-list__item-link {
+        padding-left : 0;
+    }
+
+    .folio-list__item-link_custom {
         padding-left : 0;
     }
 
