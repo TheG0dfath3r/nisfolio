@@ -6,6 +6,8 @@
   letter-spacing: 0.4px;
 }
 .section-news .gallery .item {
+  box-shadow: 0 0 5px 5px rgb(97, 95, 95);
+
   height: 0;
   overflow: hidden;
   margin-bottom: 30px;
