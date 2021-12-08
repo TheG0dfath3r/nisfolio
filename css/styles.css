@@ -3948,7 +3948,7 @@ img.u-pull-left {
 
 .modal-popup img:hover {
     transform: scale(1.02);
-    transition: ease-in-out 1s;
+    transition: ease-in-out 0.5s;
 }
 
 .modal-popup h5 {

@@ -1,59 +1,153 @@
-<head><link rel="stylesheet" href="viit.css">
-  
+<html>
+<style>
+    /* The Modal (background) */
+    
+    .modal {
+        display: none;
+        /* Hidden by default */
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%;
+        /* Full width */
+        height: 100%;
+        /* Full height */
+        overflow: auto;
+        /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0);
+        /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.4);
+        /* Black w/ opacity */
+    }
+    /* Modal Content/Box */
+    
+    .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto;
+        /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        /* Could be more or less, depending on screen size */
+    }
+    /* The Close Button */
+    
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+</style>
+
+<head>
+    <link rel="stylesheet" href="viit.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/vendor.css">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"></head>
-  <div class="block-pages-index"style="background-color:#141516;">
-    <div class="section-news" style="background-color:#141516;">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 pt-60px pb-60px" >
-            <h2 style="font-family: 'DM Serif Display';font-size: 7vh;color: blanchedalmond;display: inline;">Graphics</h2>
-             <a href="index.html" style="float: right;display: inline;"><img src="https://img.icons8.com/ios-glyphs/60/ffffff/circled-left-2.png"/></a>
-          </div>
-        </div>
-  
-        <div class="row gallery">
-          <div class="col-md-4 col-sm-12">
-            <div class="item"><a href=""><img src="images/grp1.png" alt=""> 
-              </a></div>
-          </div>
-          <div class="col-md-4 col-sm-12">
-            <div class="item"><a href=""><img src="images/grp4.png" alt="">
-              </a></div>
-          </div>
-          <div class="col-md-4 col-sm-12">
-            <div class="item"><a href=""><img src="images/grp2.jpeg" alt=""></a></div>
-          </div>
-          <div class="col-md-4 col-sm-12">
-            <div class="item"><a href=""><img src="images/grp3.jpg" alt=""></a></div>
-          </div>
-          <div class="col-md-4 col-sm-12">
-            <div class="item"><a href="#modal-01"><img src="images/grp5.jpg" alt=""></a></div>
-          </div>
-         
-         
-        </div>
-      </div>
-    </div>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
 
+<body>
+    <div class="block-pages-index" style="background-color:#141516; margin-top: -2em !important;">
+        <section id="works" class="s-works target-section" style="margin-top: -2em !important;">
+            <div class="row works-portfolio section-news " style="background-color:#141516; margin-top: -2em !important;">
+                <div class="container ">
+                    <div class="row ">
+                        <div class="col-md-12 pt-60px pb-60px ">
+                            <h2 style="font-family: 'DM Serif Display';font-size: 7vh;color: blanchedalmond;display: inline; ">Graphics</h2>
+                            <a href="index.html " style="float: right;display: inline;margin-left: 15rem;"><img src="https://img.icons8.com/ios-glyphs/60/ffffff/circled-left-2.png " /></a>
+                        </div>
+                    </div>
 
-    -------------------------------------------- -->
-    <div id="modal-01" hidden>
-        <div class="modal-popup">
-            <img src="images/setu2.png" alt="">
-
-            <div class="modal-popup__desc">
-                <h5>Arogya Setu Redesign</h5>
-                <p>The app drove in a huge audience juxtaposed with the issues in its user experience.
-                    For me, here, necessity was the mother of invention. I saw people across all age
-                    groups use the app for their safety, rather, learn how to use it.</p>
-                <ul class="modal-popup__cat">
-                    <li>Branding</li>
-                    <li>Product Design</li>
-                </ul>
+                    <div class="row gallery ">
+                        <div class="col-md-4 col-sm-12 ">
+                            <div class="item ">
+                                <a href=" "><img src="images/grp1.png " alt=" ">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12 ">
+                            <div class="item ">
+                                <a href=" "><img src="images/grp4.png " alt=" ">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12 ">
+                            <div class="item ">
+                                <a href=" "><img src="images/grp2.jpeg " alt=" "></a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12 ">
+                            <div class="item ">
+                                <a href=" "><img src="images/grp3.jpg " alt=" "></a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12 ">
+                            <div class="item">
+                                <a href="#myModal"><img src="images/grp5.jpg " alt=" "></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="myModal" class="modal">
+                        <div class="modal-popup">
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <img src="images/grp5.jpg " alt=" ">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-  </div>
+        </section>
+    </div>
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/plugins.js "></script>
+    <script src="js/main.js "></script>
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementsByClassName("item");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>
