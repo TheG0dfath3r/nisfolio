@@ -3021,6 +3021,37 @@ img.u-pull-left {
     top          : 0;
     left         : 0;
 }
+.modal-dialog {
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+
+
+.modal-body {
+position:relative;
+padding:0px;
+min-height:400px;
+background:#ccc;
+}
+
+
+
+
+.close {
+position:absolute;
+right:-30px;
+top:0;
+z-index:999;
+font-size:2rem;
+font-weight: normal;
+color:#fff;
+opacity:1;
+}
+
+#image {
+min-height:200px;
+}
 
 .header-mobile {
     z-index          : 101;
@@ -3287,7 +3318,7 @@ img.u-pull-left {
 
 .intro-content {
     min-height      : calc(25.5 * var(--space));
-    justify-content : center;
+    justify-content : flex-start;
     align-items     : center;
     padding-top     : calc(16vh + var(--header-height));
     padding-bottom  : var(--vspace-3);
