@@ -3944,11 +3944,23 @@ img.u-pull-left {
 
 .modal-popup img {
     margin-bottom: var(--vspace-0_75);
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .modal-popup img:hover {
-    transform: scale(1.02);
-    transition: ease-in-out 0.5s;
+    transform: scale(1.03);
+    background-color: rgba(0, 0, 0, 0.8) !important;
+    transition: 0.5s ease-in-out;
+    opacity: 0.7;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.5s ease;
+}
+
+.overlay:hover {
+    background: rgba(0, 0, 0, .5) !important;
 }
 
 .modal-popup h5 {
