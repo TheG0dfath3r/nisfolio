@@ -22,32 +22,46 @@
                 <div class="row gallery">
                     <div class="col-md-4 col-sm-12">
                         <div class="item">
-                            <a href=""><img src="images/il1.png" alt="">
-                            </a>
+                            <img src="images/il1.png" alt="">
+                            
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-12">
                         <div class="item">
-                            <a href=""><img src="images/il2.png" alt="">
-                            </a>
+                            <img src="images/il2.png" alt="">
+                            
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-12">
                         <div class="item">
-                            <a href=""><img src="images/il3.png" alt=""></a>
+                            <img src="images/il3.png" alt="">
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-12">
                         <div class="item">
-                            <a href=""><img src="images/il4.jpg" alt=""></a>
+                            <img src="images/il4.jpg" alt="">
                         </div>
                     </div>
-
-
+                </div>
+                <div class="popup">
+                    <span> &times; </span>
+                    <img src="images/il1.png " alt=" ">
                 </div>
             </div>
         </div>
     </div>
+    <script>
+        document.querySelectorAll('.item img').forEach(image=>{
+            image.onclick = () =>{
+                document.querySelector('.popup').style.display = 'block';
+                document.querySelector('.popup img ').src = image.getAttribute('src');
+            }
+        })
+        document.querySelector('.popup span').onclick = () =>{
+            document.querySelector('.popup').style.display = 'none';
+        }
+
+    </script>
 </body>
 
 </html>
