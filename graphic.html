@@ -48,6 +48,74 @@
         text-decoration: none;
         cursor: pointer;
     }
+    .galTitle{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .galArrow{
+        margin-left: 10rem;
+        margin-top: 6rem;
+        height:100px;
+    }
+
+    /* The Pop-Up Button */
+    
+    .item{
+        cursor: pointer;
+    }
+    .item img{
+        transition: .2s linear;
+    }
+    .item:hover img{
+        transform: scale(1.1);
+    }
+    .popup{
+        position:fixed;
+        top:0; left:0;
+        background: rgba(0, 0, 0, 0.9);
+        height: 100%;
+        width: 100%;
+        z-index: 100;
+        display: none;
+    }
+    .popup span{
+        position:absolute;
+        top:30; right:50px;
+        font-size: 60px;
+        font-weight: bolder;
+        color: #fff;
+        cursor: pointer;
+        z-index: 100;
+    }
+    .popup img{
+        position:absolute;
+        top:50%; left:50%;
+        transform: translate(-50%,-50%);
+        border: 3px solid #fff;
+        border-radius: 5px;
+        width: 550px;
+        object-fit: cover;
+    }
+
+    @media only screen and (max-width:991px) 
+    {
+        .galArrow img{
+            margin-left: 100px ;
+            height: 80px;
+        }
+    }
+    @media only screen and (max-width:500px) 
+    {
+        .galArrow{
+            margin-right: 100px;
+        }
+        .galArrow img{
+            height: 70px;
+        }
+    }
+
 </style>
 
 <head>
@@ -66,41 +134,47 @@
         <section id="works" class="s-works target-section" style="margin-top: -2em !important;">
             <div class="row works-portfolio section-news " style="background-color:#141516; margin-top: -2em !important;">
                 <div class="container ">
-                    <div class="row ">
-                        <div class="col-md-12 pt-60px pb-60px ">
+                    <div class="row galRow">
+                        <div class="col-md-12 pt-60px pb-60px galTitle">
                             <h2 style="font-family: 'DM Serif Display';font-size: 7vh;color: blanchedalmond;display: inline; ">Graphics</h2>
-                            <a href="index.html " style="float: right;display: inline;margin-left: 10rem;"><img src="https://img.icons8.com/ios-glyphs/60/ffffff/circled-left-2.png" height="100px" /></a>
+                            <a href="index.html " class="galArrow"><img src="https://img.icons8.com/ios-glyphs/60/ffffff/circled-left-2.png"/></a>
                         </div>
                     </div>
 
                     <div class="row gallery ">
                         <div class="col-md-4 col-sm-12 ">
-                            <div class="item ">
-                                <a href=" "><img src="images/grp1.png " alt=" ">
-                                </a>
+                            <div class="item">
+                                <img src="images/grp1.png " alt=" ">
+                                <div class="grid-overlay">
+                                    <button class="viewbutton">View More</button>
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-12 ">
                             <div class="item ">
-                                <a href=" "><img src="images/grp4.png " alt=" ">
-                                </a>
+                                <img src="images/grp4.png " alt=" ">
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-12 ">
                             <div class="item ">
-                                <a href=" "><img src="images/grp2.jpeg " alt=" "></a>
+                                <img src="images/grp2.jpeg " alt=" ">
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-12 ">
                             <div class="item ">
-                                <a href=" "><img src="images/grp3.jpg " alt=" "></a>
+                                <img src="images/grp3.jpg " alt=" ">
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-12 ">
                             <div class="item">
-                                <a href="#myModal"><img src="images/grp5.jpg " alt=" "></a>
+                                <img src="images/grp5.jpg " alt=" ">
                             </div>
                         </div>
+                        
+                    </div>
+                    <div class="popup">
+                        <span> &times; </span>
+                        <img src="images/grp1.png " alt=" ">
                     </div>
                     <div id="myModal" class="modal">
                         <div class="modal-popup">
@@ -147,6 +221,17 @@
                 modal.style.display = "none";
             }
         }
+
+        document.querySelectorAll('.item img').forEach(image=>{
+            image.onclick = () =>{
+                document.querySelector('.popup').style.display = 'block';
+                document.querySelector('.popup img ').src = image.getAttribute('src');
+            }
+        })
+        document.querySelector('.popup span').onclick = () =>{
+            document.querySelector('.popup').style.display = 'none';
+        }
+
     </script>
 </body>
 
