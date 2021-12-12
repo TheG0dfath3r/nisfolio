@@ -1,0 +1,245 @@
+<html>
+<style>
+    /* The Modal (background) */
+    
+    .modal {
+        display: none;
+        /* Hidden by default */
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%;
+        /* Full width */
+        height: 100%;
+        /* Full height */
+        overflow: auto;
+        /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0);
+        /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.4);
+        /* Black w/ opacity */
+    }
+    /* Modal Content/Box */
+    
+    .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto;
+        /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        /* Could be more or less, depending on screen size */
+    }
+    /* The Close Button */
+    
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .galTitle{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .galArrow{
+        margin-left: 10rem;
+        margin-top: 6rem;
+        height:100px;
+    }
+
+    /* The Pop-Up Button */
+    
+    .item{
+        cursor: pointer;
+    }
+    .item img{
+    
+        transition: .2s linear;
+    }
+    .item:hover img{
+        transform: scale(1.1);
+    }
+    .item1 {
+        cursor: pointer;
+    }
+    .item1 img{
+        
+        transition: .2s linear;
+    }
+    .item1:hover img{
+        transform: scale(1.1);
+    }
+    .popup{
+        position:fixed;
+        top:0; left:0;
+        background: rgba(0, 0, 0, 0.9);
+        height: 100%;
+        width: 100%;
+        z-index: 100;
+        display: none;
+    }
+    .popup span{
+        position:absolute;
+        top:30; right:50px;
+        font-size: 60px;
+        font-weight: bolder;
+        color: #fff;
+        cursor: pointer;
+        z-index: 100;
+    }
+    .popup img{
+        position:absolute;
+        top:50%; left:50%;
+        transform: translate(-50%,-50%);
+        border: 3px solid #fff;
+        border-radius: 5px;
+        width: 550px;
+        object-fit: cover;
+    }
+
+    @media only screen and (max-width:991px) 
+    {
+        .galArrow img{
+            margin-left: 100px ;
+            height: 80px;
+        }
+    }
+    @media only screen and (max-width:500px) 
+    {
+        .galArrow{
+            margin-right: 100px;
+        }
+        .galArrow img{
+            height: 70px;
+        }
+    }
+
+</style>
+
+<head>
+    <link rel="stylesheet" href="viit.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="block-pages-index" style="background-color:#141516; margin-top: -2em !important;">
+        <section id="works" class="s-works target-section" style="margin-top: -2em !important;">
+            <div class="row works-portfolio section-news " style="background-color:#141516; margin-top: -2em !important;">
+                <div class="container ">
+                    <div class="row galRow">
+                        <div class="col-md-12 pt-10px pb-30px galTitle">
+                            <h2 style="font-family: 'DM Serif Display';font-size: 7vh;color: blanchedalmond;display: inline; ">Team Projects</h2>
+                            <a href="index.html " class="galArrow"><img src="https://img.icons8.com/ios-glyphs/60/ffffff/circled-left-2.png"/></a>
+                        </div>
+                    </div>
+
+                    <div class="row gallery " style="display: flex;align-items: center;justify-content: center;">
+                       
+                        <div><p>VinnovateIT is the official innovation and incubation lab that comes under the Information Technology department at my undergrad university. It is one of the fastest growing student communities in India. As a team member,
+                            I have organized several technical and design events, hackathons and worked on projects along with other club members in the domains of App Dev, Web Dev and mostly UI/UX Design. As the lead of a team of designers, I
+                            revamped the social media identity and contributed to several mobile and web application student projects.
+                        </p></div>
+                        <br>
+                        <br>
+                        <div class="col-md-4 col-sm-12 ml-4 ">
+                            <div class="item" >
+                                <a href="https://VinnovateIT.com" target="_blank"> 
+                                <img src="images/studyhub.PNG" alt=" ">
+                            </a>
+                            </div>
+                            <p style="text-align: center;">View Projects</p>
+                        </div>
+                       
+                        <div class="col-md-4 col-sm-12 mr-4">
+                            <div class="item" >
+                                <a href="https://www.instagram.com/vinnovateit/" target="_blank"> 
+                                <img src="images/4.png " alt=" ">
+                                </a>
+                            </div>
+                            <p style="text-align: center;">View Social Media</p>
+                        </div>
+                        
+                    </div>
+                    <div class="popup">
+                        <span> &times; </span>
+                        <img src="images/grp1.png " alt=" ">
+                    </div>
+                    <div id="myModal" class="modal">
+                        <div class="modal-popup">
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <img src="images/grp5.jpg " alt=" ">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/plugins.js "></script>
+    <script src="js/main.js "></script>
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementsByClassName("item");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        document.querySelectorAll('.ite img').forEach(image=>{
+            image.onclick = () =>{
+                document.querySelector('.popup').style.display = 'block';
+                document.querySelector('.popup img ').src = image.getAttribute('src');
+            }
+        })
+        document.querySelector('.popup span').onclick = () =>{
+            document.querySelector('.popup').style.display = 'none';
+        }
+
+    </script>
+</body>
+
+</html>
