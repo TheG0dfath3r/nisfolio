@@ -4296,7 +4296,7 @@ img.u-pull-left {
 
 @media screen and (max-width: 800px) {
     .contact-top {
-        padding-top: var(--vspace-3);
+        padding-top: var(--vspace-4);
     }
 }
 
