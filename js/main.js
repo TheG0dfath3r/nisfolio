@@ -23,7 +23,7 @@
         opacity: 0,
         duration: 1000,
         begin: function(anim) {
-            window.scrollTo(0, 0);
+         
         }
     })
     .add({
