@@ -2789,7 +2789,7 @@ img.u-pull-left {
     font-size: var(--text-sm);
     font-weight: 400;
     color: var(--color-white);
-    text-transform: none;
+    text-transform: Capitalize;
     letter-spacing: .3em;
     margin-top: 0;
     margin-left: .2rem;
