@@ -2784,6 +2784,19 @@ img.u-pull-left {
  * ## theme-specific typography classes
  * ------------------------------------------------------------------- */
 
+.text-pretitle1 {
+    font-family: var(--font-1);
+    font-size: var(--text-sm);
+    font-weight: 400;
+    color: var(--color-white);
+    text-transform: none;
+    letter-spacing: .3em;
+    margin-top: 0;
+    margin-left: .2rem;
+    margin-bottom: var(--vspace-0_5);
+    position: relative;
+}
+
 .text-pretitle {
     font-family: var(--font-1);
     font-size: var(--text-sm);
